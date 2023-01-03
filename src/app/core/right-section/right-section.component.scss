@@ -1,4 +1,7 @@
 .right_section {
+  @media (max-width:600px){
+    margin-top: 50px;
+  }
   .heading_section {
     display: flex;
     align-items: center;
@@ -6,6 +9,7 @@
     height: 40px;
     h2 {
       font-size: 25px;
+      margin-bottom: 0;
     }
     .mat-icon {
       color: #5e5e5e;

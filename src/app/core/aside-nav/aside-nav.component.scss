@@ -1,6 +1,17 @@
 .top_header {
   .logo {
     margin-bottom: 75px;
+    @media (max-width:600px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .icon_close{
+      display: none;
+      @media (max-width:600px) {
+        display: flex;
+      }
+    }
     h2 {
       font-size: 35px;
       font-weight: bold;

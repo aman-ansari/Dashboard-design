@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-aside-nav',
@@ -11,5 +12,7 @@ export class AsideNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  closenav(){
+    $('.left_section').css('width', '0');
+  }
 }
