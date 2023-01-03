@@ -1,0 +1,14 @@
+.section_container{
+    padding: 20px;
+    display: flex;
+    .left_section{
+        width: 15%;
+    }
+    .middle_section{
+        width: 60%;
+        padding-right: 50px;
+    }
+    .right_section{
+        width: 25%;
+    }
+}

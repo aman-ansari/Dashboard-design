@@ -1,0 +1,132 @@
+.right_section {
+  .heading_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    h2 {
+      font-size: 25px;
+    }
+    .mat-icon {
+      color: #5e5e5e;
+    }
+  }
+  .profile_section {
+    margin-top: 60px;
+    text-align: center;
+    .upload_img {
+      position: relative;
+      display: inline-flex;
+      img {
+        height: 100px;
+      }
+      span {
+        position: absolute;
+        font-size: 20px;
+        font-weight: bold;
+        bottom: -20px;
+        right: -15px;
+        color: #fff;
+        background-color: #5e81f4;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+    }
+    .profile_name {
+      margin-top: 40px;
+      h4 {
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      p {
+        margin-bottom: 0;
+        color: #a4a4a4;
+        font-size: 18px;
+      }
+    }
+  }
+  .language_section {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    .lang_id {
+      margin-right: 20px;
+      h4 {
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    .lang_name {
+      min-width: 170px;
+      h4 {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 13px;
+        color: #a4a4a4;
+      }
+    }
+    .lang_progress {
+      width: 100%;
+      ::ng-deep ngb-progressbar {
+        height: 5px;
+        background-color: #d8d8d8;
+        .progress-bar{
+            background-color: #5e81f4 !important;
+        }
+      }
+    }
+  }
+  .reminder_section{
+    margin-top: 50px;
+    .section_heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        h4{
+            font-size: 19px;
+        }
+        .mat-icon{
+
+        }
+    }
+    .section_content{
+        .section_item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            .icon{
+                margin-right: 25px;
+                .mat-icon{
+                    font-size: 18px;
+                    color: #ff808b;
+                    &.mail{
+                        color: #5e81f4;
+                    }
+                }
+            }
+            .main_content{
+                h4{
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-size: 13px;
+                    color: #a4a4a4;
+                }
+            }
+        }   
+    }
+  }
+}
