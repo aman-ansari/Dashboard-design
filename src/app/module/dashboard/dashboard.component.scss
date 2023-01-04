@@ -96,6 +96,99 @@
         }
       }
     }
+    .time_spent {
+      .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4 {
+          font-size: 19px;
+          margin-bottom: 0;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 13px;
+          margin-bottom: 0;
+          font-weight: bold;
+          .mat-icon {
+            margin-left: 15px;
+          }
+        }
+      }
+      .graph {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;
+        .item {
+          height: 160px;
+          .progress {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 5px;
+            margin: 20px auto 0 auto;
+            background-color: rgb(211, 211, 211);
+            .progress_bar {
+              width: 5px;
+              &.vocab {
+                background-color: #ff808b;
+              }
+              &.grammer {
+                background-color: #4d4cac;
+              }
+              &.listening {
+                background-color: #5e81f4;
+              }
+              &.writing {
+                background-color: #9698d6;
+              }
+            }
+          }
+          span {
+            margin-bottom: 20px;
+            font-size: 14px;
+          }
+          .g {
+            height: 100%;
+            width: 2px;
+            background-color: gray;
+            margin: 0 auto;
+          }
+        }
+      }
+      .g_known {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+        .g_item {
+          display: flex;
+          align-items: center;
+          .dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            &.vocab {
+              background-color: #ff808b;
+            }
+            &.grammer {
+              background-color: #4d4cac;
+            }
+            &.listening {
+              background-color: #5e81f4;
+            }
+            &.writing {
+              background-color: #9698d6;
+            }
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
   .last_sec {
     margin-top: 25px;
@@ -126,7 +219,7 @@
       display: flex;
       align-items: end;
       justify-content: space-between;
-      @media (max-width:600px){
+      @media (max-width: 600px) {
         margin-bottom: 15px;
       }
       &.darkblue {
