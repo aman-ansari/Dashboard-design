@@ -27,6 +27,7 @@
         font-size: 17px;
         margin-bottom: 30px;
         position: relative;
+        cursor: pointer;
         .mat-icon {
           margin-right: 25px;
           color: #a4a4a4;
@@ -51,6 +52,12 @@
           color: #a4a4a4;
         }
         &.active {
+          .mat-icon{
+            color: #5e81f4;
+          }
+          span{
+            color: #5e81f4;
+          }
           &::after {
             position: absolute;
             background-color: blue;

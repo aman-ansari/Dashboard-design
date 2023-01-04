@@ -15,7 +15,50 @@ body, ul, li {
  li{
     list-style: none;
  }
- a, a:link, a:hover, a:active, a:focus{
-    color:inherit;
- }
+ .dashboard_top {
+  .top_section {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      @media (max-width: 600px) {
+        display: flex;
+        align-items: center;
+      }
+      .burger_menu {
+        display: none;
+        margin-right: 15px;
+        @media (max-width: 600px) {
+          display: block;
+        }
+      }
+      h2 {
+        font-size: 30px;
+        color: #111;
+        margin-bottom: 0;
+      }
+    }
+    .search_icon {
+      display: flex;
+      align-items: center;
+      p {
+        margin-right: 15px;
+        font-size: 15px;
+        margin-bottom: 0;
+        color: #5e5e5e;
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+      .mat-icon {
+        background-color: #e5e9fa;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+      }
+    }
+  }
+}
 
